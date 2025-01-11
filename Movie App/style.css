@@ -1,0 +1,134 @@
+/* Global Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #131720;
+    font-family: 'Arial', sans-serif;
+    color: rgb(15, 111, 15);
+    line-height: 1.6;
+}
+
+/* Heading Styles */
+h3 {
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+/* Top Navigation */
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #151f30;
+    padding: 10px 20px;
+    border-bottom: 3px solid #1e283a;
+}
+
+.topnav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.topnav a:hover {
+    color: #f9a826;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+#form {
+    display: flex;
+    align-items: center;
+    background-color: #1e283a;
+    border-radius: 8px;
+    padding: 5px 10px;
+    width: 300px;
+}
+
+input {
+    all: unset;
+    font: 15px system-ui;
+    color: #fff;
+    flex: 1;
+    padding: 5px;
+}
+
+input::placeholder {
+    color: #c5c7cd;
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Movie Grid Layout */
+.movie-grid {
+    display: flex;
+    flex-wrap: wrap;            /* Allow items to wrap onto new lines */
+    justify-content: space-between; /* Evenly space out the cards */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Card Styles */
+.card {
+    background-color: #1e283a;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    width: 23%;               /* Ensure 4 cards per row */
+    box-sizing: border-box;   /* Include padding in width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+    color: #f9a826;
+    margin: 10px 0;
+}
+
+.card p {
+    color: #c5c7cd;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .movie-grid {
+        justify-content: space-evenly; /* Ensure space between cards */
+    }
+}
+
+@media (max-width: 768px) {
+    .movie-grid {
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%; /* Make cards take up more space on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%; /* Cards will take most of the screen on very small screens */
+    }
+}

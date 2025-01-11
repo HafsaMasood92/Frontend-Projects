@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f3f4f6; /* Adding a light background color */
+}
+
+.wrapper {
+    width: 320px; /* Reduced the width to make the box smaller */
+    border-radius: 10px;
+    padding: 20px 25px; /* Reduced padding for a more compact feel */
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added a subtle box-shadow for depth */
+}
+
+.wrapper header {
+    font-size: 24px; /* Slightly smaller font size */
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 15px; /* Added margin for better spacing */
+}
+
+.wrapper form {
+    margin: 0;
+}
+
+form .row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px; /* Reduced bottom margin */
+}
+
+form .row label {
+    font-size: 16px; /* Reduced font size for labels */
+    margin-bottom: 5px;
+}
+
+form :where(textarea, select, button) {
+    outline-style: none;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+form .row textarea {
+    resize: none;
+    height: 90px; /* Reduced height for textarea */
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #ddd; /* Lighter border color */
+    background-color: #f9f9f9; /* Slightly lighter background */
+}
+
+form .row .outer {
+    height: 40px; /* Reduced height of the select container */
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9; /* Matching background with textarea */
+}
+
+form .row select {
+    font-size: 14px;
+    background-color: transparent;
+}
+
+form button {
+    height: 45px; /* Reduced height for the button */
+    margin-top: 10px;
+    background-color: rgb(11, 94, 11);
+    color: white;
+    font-size: 16px; /* Reduced font size for the button */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded button corners */
+    transition: background-color 0.3s ease; /* Added transition effect */
+}
+
+form button:hover {
+    background-color: rgb(8, 68, 8); /* Slightly darker green on hover */
+}
