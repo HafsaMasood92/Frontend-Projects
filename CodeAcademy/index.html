@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/apercu-movistar" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/material-ui/4.12.4/index.js" integrity="sha512-wEnX3bNd/CdyrOFR0KIGlHihK/w9x3/It8Vc18aymEF/F/f1q0Mq8T+GSxF1wYUACLEGECapuIYQdQlKY1LBJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <!-- Navbar -->
+
+    <div class="navbar flex-row">
+
+        <div class="logo">
+            <a href="#"><img src="download.png" alt=""></a>
+        </div>
+        <div class="hamburger-menu">
+        <label for="check"><i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i></label>
+        </div>
+        <input type="checkbox" name="" id="check">
+        <div class="nav-items flex-row">
+            <!-- <label for="check"><i class="fa-solid fa-xmark fa-xl" style="color: #000000;"></i></label> -->
+            <li><a href="#">Catalog <i class="fa-solid fa-caret-down" style="color: #000000;"></i></a></li>
+            <li><a href="#">Resources <i class="fa-solid fa-caret-down" style="color: #000000;"></i></a></li>
+            <li><a href="#">Community <i class="fa-solid fa-caret-down" style="color: #000000;"></i></a></li>
+            <li><a href="#">Pricing <i class="fa-solid fa-caret-down" style="color: #000000;"></i></a></li>
+            <li><a href="#">Career Center</a></li>
+            <li><a href="#">For Teams</a></li>
+        </div>
+
+        <div class="nav-btn">
+            <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #000000;"></i>
+            <button class="btn-1">Log In</button>
+            <button class="btn-2">Sign Up</button>
+        </div>
+
+    </div>
+
+    <!-- Hero-Section -->
+
+    <div class="hero-section1 flex-row">
+        <div class="hero1-heading-and-img font-primary">
+            <h1>The next
+                <br> generation <br>of learning</h1>
+              <div class="two-para">
+                <span><i class="fa-solid fa-plus fa-sm" style="color: #FFEFE5;"></i>Build skills quicker with AI assistance</span>
+                <br>
+                <span><i class="fa-solid fa-plus fa-sm" style="color: #FFEFE5;"></i>Gain experience with modern developer tools</span>
+              </div>
+            <img src="Carousel_2.svg" alt="">
+        </div>
+       <div class="form font-primary">
+        <h3>Join the millions learning to code with Codecademy for free</h3>
+        <span>*Required</span>
+        <form action="">
+            <label for="email">Email*</label>
+            <br>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="password">Password*</label>
+            <br>
+            <input type="password" name="password" id="password">
+            <input type="button" value="Sign up" class="signup-btn">
+        </form>
+        <div class="privacy">By signing up, you agree to the Codecademy <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>. This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</div>
+       <p class="signup-img-text">Or sign up using:</p>
+        <div class="signup-img flex-row">
+            <div class="signup-icons">
+                <i class="fa-brands fa-linkedin fa-lg" style="color: #4b75be;"></i>
+            </div>
+            <div class="signup-icons"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAA4CAMAAABuU5ChAAAA+VBMVEX////pQjU0qFNChfT6uwU0f/O4zvs6gfSJr/j6twDoOisjePPoNSXpPjDrWU/oLRr+9vZ7pff/vAAUoUAkpEn0ran619b82pT7wgD+68j947H/+e7//PafvPm/0vuBw5Df7+P63tz3xcPxl5HnJQ7qUEXxj4n4z83zoJzqSz/vgXrucWrsY1r1tbHrSBPoOjbvcSr0kx74rRH80XntZC3xhSPmGRr86+r4sk/936EJcfPS3/yowvnbwVKjsTjx9f5urEjkuBu9tC+ErkJyvoRRpj2az6hWs23j6/0emX2z2btAiuI8k8AyqkE5nZU1pGxCiOxVmtHJ5M+PSt3WAAACGElEQVRIieWSa3fSQBCGk20CJRcW2AWKxgJtqCmieNdatV5SUtFq5f//GJeE7CXJJOT4TZ+PO+c58+7MaNr/SWd60mecTDs1pMFp28dODPZnZw/369TXseXqHNfCblDdte84krTDwUFFwnMnJyXm+bSsmZ/vlcb1+6A2x5C1xYeyPgIyJlhtYDjzjOYyZA3oFighLYxni8UMY6dCG/jy9KzTQfI8DXSnTNN0kcl1lNE9dlxYC8TnnEVmAJ02qHlPllyb58vgmQ2Np0tYgzGMo2ex6IKRihi1mPhcZyYuO8McL4yYl0vrrI6mJZpx9Or1mzqa10rFt8p7o5ArXh+lXutC8d6ZBdiXvH6PeyPFsw8KMBu8fsG9+3t473l9yD1vD+/BX3v1cgqv3lzE/8A9NCUK5sn33vugeN1DQTcVTbG/9M56H+lEAzg2d54t7iW5657xCdEx5PF+B9Lj9oO9z4hBgIZX6YyaXfmZaV9QQkU781h+Hra+7jQaFv6Or8RW3r1rhErES641D9XKigox8jJaQxyAfZOpIQm6kiuT6BvfujqVuEpkkY43u+d1RBBF35v55aVJidKSEBRFiJAk/+0PM3NjgjFFMLc/WVYzlzImLBPprzvzrlBjHUmZSH8DmqatS0QSZtcjTxUBWSlZw1bckhaYlISTcm1rIqKolJJxtRWnXUVscTFsjWFFwoy7WTM2+zX69/gDaLcy7SET9nsAAAAASUVORK5CYII=" alt="" height="20px"></div>
+            <div class="signup-icons"><i class="fa-brands fa-square-facebook fa-lg" style="color: #0f75c2;"></i></div>
+            <div class="signup-icons"><i class="fa-brands fa-github fa-lg" style="color: #000000;"></i></div>
+            <div class="signup-icons"><i class="fa-brands fa-apple fa-lg" style="color: #000000;"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero-section 2 -->
+     <div class="hero-section2 font-primary">
+        <h2>Find what's right for you</h2>
+        <p>Answer 3 quick questions to get recommendations that match your interests.</p>
+
+
+        <div class="lang-and-num flex-row">
+            <div class="numbering-container flex-col">
+                <div class="number">1</div>
+                <div class="number light">2</div>
+                <div class="number light">3</div>
+            </div>
+      <div class="grid-container-head">
+        <h3>What do you want to learn about?</h3>
+        <div class="languages-container">
+            <div class="languages"><a href="#">Web Development</a></div>
+            <div class="languages"><a href="#">Data Science</a></div>
+            <div class="languages"><a href="#">computer science</a></div>
+            <div class="languages"><a href="#">web design</a></div>
+            <div class="languages"><a href="#">artificial intelligence</a></div>
+            <div class="languages"><a href="#">machine learning</a></div>
+            <div class="languages"><a href="#">game development</a></div>
+            <div class="languages"><a href="#">mobile development</a></div>
+            <div class="languages"><a href="#">data visualiziation</a></div>
+            <div class="languages"><a href="#">not sure yet</a></div>
+        </div>
+    </div>
+
+        <div class="book-img">
+            <img src="career-interest.png" alt="">
+            <p>We have hundreds of courses that cover just about everything.</p>
+        </div>
+        </div>
+     </div>
+
+     <!-- Hero section 3 -->
+      <div class="hero-section3">
+        <div class="main-headings">
+            <h5>Start Learning</h5>
+            <h3>Popular Courses</h3>
+        </div>
+        <div class="sub-headings flex-row">
+            <p>AI</p>
+            <P>Free</P>
+            <P>New to coding</P>
+            <P>Most popular</P>
+            <P>Skill paths</P>
+            <P>Career paths</P>
+        </div>
+        <div class="cards-container">
+
+            <div class="card-hover-scale">
+                <div class="cards card1">
+                    <div class="card-head-text">Free course</div>
+                    <h5>Intro To Generative AI</h5>
+                    <p>Dive into the many forms of generative AI and learn how we can best use these new technologies</p>
+                    <div class="card-foot-text">
+                        <i class="fa-solid fa-chart-simple fa-lg" style="color: #000000;"></i> <strong>Beginner</strong> Friendly <span><strong>1</strong> hour</span>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="card-hover-scale">
+                <div class="cards card2">
+                    <div class="card-head-text">Free course</div>
+                    <h5>Learn how to Use ChatGpt</h5>
+                    <p>Ready to dive into the world of Generative AI? Learn how ChatGPT works, how to use ChatGPT in your...</p>
+                    <div class="card-foot-text">
+                        <i class="fa-solid fa-chart-simple fa-lg" style="color: #000000;"></i> <strong>Beginner</strong> Friendly <span><strong>1</strong> hour</span>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="card-hover-scale">
+                <div class="cards card3">
+                    <div class="card-head-text">Free course</div>
+                    <h5>Learn How to Use AI for Coding</h5>
+                    <p>Ready to learn how to use AI for coding? Learn how to use generative AI tools like ChatGPT to generate..</p>
+                    <div class="card-foot-text">
+                        <i class="fa-solid fa-chart-simple fa-lg" style="color: #000000;"></i> <strong>Beginner</strong> Friendly <span><strong>1</strong> hour</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-hover-scale last-hover-scale">
+                <div class="cards last-card">
+                    <div class="card-head-text last-card-head-text">Career path</div>
+                    <h5>Machine Learning/AI Engineer</h5>
+                    <p>Machine Learning/AI Engineers build end-to-end ML applications and power many of the apps we use ever..</p>
+                    <div class="card-foot-text text-1">Includes <strong>7 courses</strong></div>
+                    <div class="card-foot-text text-2">With <strong>Certificate</strong></div>
+                    <div class="card-foot-text text-3"><i class="fa-solid fa-chart-simple fa-lg" style="color: #000000;"></i> Intermediate <span><strong>50</strong> hours</span></div>
+                </div>
+            </div>
+        </div>
+          <button class="buttons">Explore full Catalog</button>
+      </div>
+
+      <!-- Hero section 4 -->
+       <div class="hero-section4">
+        <div class="hero4-main-headings">
+          <h5>The platform</h5>
+          <h3>Hands-on learning</h3>
+        </div>
+
+        <div class="img-and-card-container flex-row">
+            <div class="ai-assisted">
+                <div class="ai-assisted-card">
+                 <h4>AI-assisted learning</h4>
+                 <p>Make progress faster with our AI Learning Assistant, a tool that automatically understands your current course, instructions, and solution code — and gives you instant, personalized feedback.</p>
+                </div>
+                <h3>Real-world projects</h3>
+                <h3>Job-readiness checker</h3>
+                <h3>Interview simulator</h3>
+                <h3>Assessments</h3>
+            </div>
+            <div class="hero4-img">
+                <img src="ala_demo.png" alt="" height="400px">
+            </div>
+        </div>
+
+        <div class="hero4-buttons">
+           <button>Get started</button>
+           <button>Explore features</button>
+        </div>
+       </div>
+
+       <!-- Hero section 5 -->
+        <div class="hero-section5 flex-row">
+            <div class="hero5-gif">
+              <img src="gif.webp" alt="" width="80%">
+            </div>
+            <div class="hero5-headings">
+                <span><i class="fa-solid fa-star fa-lg" style="color: #000000;"></i> Powered by AI</span>
+                <h2>Job-readiness checker</h2>
+                <p>See how well your skills and experience match the job postings you’re interested in. Our job-readiness checker uses artificial intelligence to show you what you need to work on to qualify for a role.</p>
+                 <button>Try it out</button>
+            </div>
+        </div>
+
+        <!-- Hero section 6 -->
+         <div class="hero-section6">
+            <div class="headings-and-explorer flex-row">
+                <div class="hero6-headings">
+                    <h2>Stories from real people</h2>
+                    <span>Read inspiring stories from the Codecademy community.</span>
+                </div>
+                <span class="explorer">
+                    <a href="#">Explore more stories <i class="fa-solid fa-arrow-right" style="color: #5f3de6;"></i></a>
+                </span>
+            </div>
+            <div class="img-and-about">
+              <a href="#">
+                <div class="hero6-img">
+                    <img src="De-Shaun-Broadnax.jpeg" alt="">
+                    <h3>Freelancer to Developing Apps for NASA</h3>
+                    <p> De'Shaun B., Associate Software Engineer, Winter Park</p>
+                </div>
+              </a>
+               <a href="#">
+                <div class="hero6-img">
+                    <img src="SerenaIsone1.jpeg" alt="">
+                    <h3>Lessons from a Product Owner turned Engineer</h3>
+                    <p>Serena I., Software Developer @ Adidas, South Holland</p>
+                </div>
+               </a>
+                <a href="#">
+                    <div class="hero6-img">
+                        <img src="Julia-Jubileu.jpeg" alt="">
+                        <h3>From Film to Full-Stack Engineer in 11 Months</h3>
+                        <p>Julia J., Ruby on Rails Developer, São Paulo</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="hero6-img">
+                        <img src="Cristian-Tera__n.jpeg" alt="">
+                        <h3>Technical Analyst to Front-End Engineer in 6 Months</h3>
+                        <p>Cristian T., Front-End Engineer @ Grid Dynamics, Guadalajara</p>
+                    </div>
+                </a>
+            </div>
+         </div>
+
+      <!-- Footer -->
+
+      <div class="footer flex-row">
+        <div class="footer1 flex-row">
+            <div class="col1">
+                <h3>Company</h3>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <div class="footer-icons flex-row">
+                    <a href=""><i class="fa-brands fa-x-twitter fa-lg" style="color: #000000;"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f fa-lg" style="color: #000000;"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram fa-lg" style="color: #000000;"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube fa-lg" style="color: #000000;"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok fa-lg" style="color: #000000;"></i></a>
+                </div>
+                <!-- <img src="hero8 logo.png" alt="" width="120px"> -->
+            </div>
+            <div class="col2">
+                <h3>Recources</h3>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Cheatsheets</a></li>
+                <li><a href="#">Code challenges</a></li>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Workspaces</a></li>
+                 
+                <br>
+                <br>
+                <h3>Support</h3>
+                <li><a href="#">Help center</a></li>
+            </div>
+            <div class="col3">
+                <h3>Plans</h3>
+                <li><a href="#">For individuals</a></li>
+                <li><a href="#">For students</a></li>
+                <li><a href="#">For teams</a></li>
+                <li><a href="#">Discount</a></li>
+                <br>
+                <br>
+                <h3>Community</h3>
+                <li><a href="#">Clubs</a></li>
+                <li><a href="#">Code Crew</a></li>
+                <li><a href="#">Discord</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Forums</a></li>
+                <li><a href="#">Learner Stories</a></li>
+            </div>
+        </div>
+        <div class="footer2 flex-row">
+            <div class="col4">
+                <h3>Subjects</h3>
+                <li><a href="#">AI</a></li>
+                <li><a href="#">Cloud Computing</a></li>
+                <li><a href="#">Code Foundations</a></li>
+                <li><a href="#">Computer Science</a></li>
+                <li><a href="#">Cybersecurity</a></li>
+                <li><a href="#">Data Analytics</a></li>
+                <li><a href="#">Data Science</a></li>
+                <li><a href="#">Data Visualization</a></li>
+                <li><a href="#">Developer Tools</a></li>
+                <li><a href="#">DevOps</a></li>
+                <li><a href="#">Game Developments</a></li>
+                <li><a href="#">IT</a></li>
+                <li><a href="#">Machine Learning</a></li>
+                <li><a href="#">Math</a></li>
+                <li><a href="#">Mobile Development</a></li>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Web Development</a></li>
+            </div>
+            <div class="col5">
+                <h3>Languages</h3>
+                <li><a href="#">Bash</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">C++</a></li>
+                <li><a href="#">C#</a></li>
+                <li><a href="#">Go</a></li>
+                <li><a href="#">HTML & CSS</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Kotlin</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">R</a></li>
+                <li><a href="#">Ruby</a></li>
+                <li><a href="#">SQL</a></li>
+                <li><a href="#">Swift</a></li>
+            </div>
+            <div class="col6">
+                <h3>Career building</h3>
+                <li><a href="#">Career paths</a></li>
+                <li><a href="#">Career center</a></li>
+                <li><a href="#">Interview prep</a></li>
+                <li><a href="#">Professional certification</a></li>
+                <li><a href="#">Compare to bootcamps</a></li>
+                <br>
+                <br>
+                _
+                <br>
+                <li><a href="#">Full Catalog</a></li>
+                <li><a href="#">Beta Content</a></li>
+                <li><a href="#">Roadmap</a></li>
+                <br>
+                <br>
+                <h3>Mobile</h3>
+                <a href="#"><img src="download-on-the-app-store.49ed17e50605b713ba01c8cd74032cae.svg" alt=""></a>
+                <br>
+                <a href="#"><img src="get-it-on-google-play.a88e7c96e43f2f1a91b8cfd36104a3dc.png" alt=""></a>
+            </div>
+        </div>
+      </div>
+
+      <div class="footer-last-row flex-row">
+        <div class="footer-last-items">
+            <a href="#">Privay Policy</a> | <a href="#">Cookie Policy</a> | <a href="#">Do Not Sell My Personal Information</a> | <a href="#">Terms</a>
+        </div>
+        <div class="copyright-banner">
+            Made with ❤️ in NYC © 2024 Codecademy
+        </div>
+      </div>
+</body>
+</html>
