@@ -4,6 +4,7 @@ Output Screenshots of CodeAcademy WEBSITE CLONE
 ![image alt ](https://github.com/HafsaMasood92/Frontend-Projects/blob/4fd6a039427df760263be941723ca07e4e5efe45/Screenshot%202025-11-19%20160312.png)
 ![image alt ](https://github.com/HafsaMasood92/Frontend-Projects/blob/4fd6a039427df760263be941723ca07e4e5efe45/Screenshot%202025-11-19%20160327.png)
 ![image alt ](https://github.com/HafsaMasood92/Frontend-Projects/blob/4fd6a039427df760263be941723ca07e4e5efe45/Screenshot%202025-11-19%20160346.png)
+![image alt ](https://github.com/HafsaMasood92/Frontend-Projects/blob/1c49f8fb998f4888bee24e487a9c9401503f667d/Screenshot%202025-11-19%20160707.png)
 
 Output Screenshots of MOVIE APP
 
